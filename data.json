@@ -1,0 +1,344 @@
+{
+  "products": [
+  {
+    "id": 1,
+    "title": "Luxury 4-Bedroom Duplex",
+    "image": "/Estate-images/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg",
+    "location": "Lekki Phase 1, Lagos, Nigeria",
+    "price": 120000000,
+    "currency": "NGN",
+    "category": "Residential",
+    "status": "For Sale",
+    "description": "A spacious luxury duplex with modern finishes, ample parking space, and a private swimming pool.",
+    "features": {
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "parkingSpaces": 3,
+      "landSize": "450 sqm"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Serviced 2-Bedroom Apartment",
+    "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
+    "location": "Victoria Island, Lagos, Nigeria",
+    "price": 6000000,
+    "currency": "NGN",
+    "category": "Residential",
+    "status": "For Rent",
+    "description": "Fully serviced apartment with 24/7 power, security, and internet access.",
+    "features": {
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "parkingSpaces": 1,
+      "furnished": true
+    }
+  },
+  {
+    "id": 3,
+    "title": "Commercial Office Space",
+    "image": "https://images.unsplash.com/photo-1560448075-bb485b067938?w=800&q=80",
+    "location": "Ikeja GRA, Lagos, Nigeria",
+    "price": 25000000,
+    "currency": "NGN",
+    "category": "Commercial",
+    "status": "For Lease",
+    "description": "Modern office space with conference rooms, ample parking, and central AC system.",
+    "features": {
+      "floorArea": "800 sqm",
+      "parkingSpaces": 10,
+      "powerBackup": true
+    }
+  },
+  {
+    "id": 4,
+    "title": "Beachfront Land",
+    "image": "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=800&q=80",
+    "location": "Oniru Beach, Lagos, Nigeria",
+    "price": 95000000,
+    "currency": "NGN",
+    "category": "Land",
+    "status": "For Sale",
+    "description": "Prime beachfront plot suitable for hotel, resort, or luxury apartments.",
+    "features": {
+      "landSize": "1500 sqm",
+      "titleDocument": "C of O"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Modern 3-Bedroom Terrace",
+    "image": "/Estate-images/stefan-k-_XJ8T9E9Evs-unsplash.jpg",
+    "location": "Chevron Drive, Lekki, Lagos",
+    "price": 85000000,
+    "currency": "NGN",
+    "category": "Residential",
+    "status": "For Sale",
+    "description": "Stylish terrace duplex with spacious living room and rooftop lounge.",
+    "features": {
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "parkingSpaces": 2,
+      "landSize": "350 sqm"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Luxurious story building with swimming pool",
+    "image": "/Estate-images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg",
+    "location": "Yaba, Lagos, Nigeria",
+    "price": 1200000,
+    "currency": "NGN",
+    "category": "Residential",
+    "status": "For Rent",
+    "description": "Affordable mini flat in a secure environment with borehole water supply.",
+    "features": {
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "furnished": false
+    }
+  },
+  {
+    "id": 7,
+    "title": "Shopping Mall Complex",
+    "image": "/Estate-images/zac-gudakov-5QLCohwVndQ-unsplash.jpg",
+    "location": "Surulere, Lagos, Nigeria",
+    "price": 300000000,
+    "currency": "NGN",
+    "category": "Commercial",
+    "status": "For Sale",
+    "description": "Well-structured shopping mall with 25 shop units and ample parking.",
+    "features": {
+      "floorArea": "2000 sqm",
+      "shops": 25,
+      "parkingSpaces": 50
+    }
+  },
+  {
+    "id": 8,
+    "title": "Luxury Penthouse",
+    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+    "location": "Banana Island, Lagos, Nigeria",
+    "price": 350000000,
+    "currency": "NGN",
+    "category": "Residential",
+    "status": "For Sale",
+    "description": "Exclusive 5-bedroom penthouse with panoramic ocean view and smart home features.",
+    "features": {
+      "bedrooms": 5,
+      "bathrooms": 6,
+      "parkingSpaces": 4,
+      "furnished": true
+    }
+  },
+  {
+    "id": 9,
+    "title": "Event Hall",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+    "location": "Abeokuta, Ogun, Nigeria",
+    "price": 75000000,
+    "currency": "NGN",
+    "category": "Commercial",
+    "status": "For Sale",
+    "description": "Fully equipped event hall with 500 seating capacity and modern sound system.",
+    "features": {
+      "floorArea": "1200 sqm",
+      "parkingSpaces": 40,
+      "airConditioned": true
+    }
+  },
+  {
+    "id": 10,
+    "title": "Residential Land Plot",
+    "image": "public/Estate-images/stephan-bechert-yFV39g6AZ5o-unsplash.jpg",
+    "location": "Ajah, Lagos, Nigeria",
+    "price": 20000000,
+    "currency": "NGN",
+    "category": "House",
+    "status": "For Sale",
+    "description": "Fenced and gated residential land in a developed neighborhood.",
+    "features": {
+      "landSize": "600 sqm",
+      "titleDocument": "Governor’s Consent"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Warehouse Facility",
+    "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+    "location": "Apapa, Lagos, Nigeria",
+    "price": 150000000,
+    "currency": "NGN",
+    "category": "Commercial",
+    "status": "For Lease",
+    "description": "Spacious warehouse with high roof clearance and trailer access.",
+    "features": {
+      "floorArea": "5000 sqm",
+      "parkingSpaces": 15,
+      "powerBackup": true
+    }
+  },
+  {
+    "id": 12,
+    "title": "Detached Bungalow",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+    "location": "Ibadan, Oyo, Nigeria",
+    "price": 35000000,
+    "currency": "NGN",
+    "category": "Residential",
+    "status": "For Sale",
+    "description": "Cozy 3-bedroom detached bungalow in a peaceful estate.",
+    "features": {
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpaces": 2
+    }
+  },
+  {
+    "id": 13,
+    "title": "Studio Apartment",
+    "image": "/Estate-images/frames-for-your-heart-vbSRUrNm3Ik-unsplash.jpg",
+    "location": "Maitama, Abuja, Nigeria",
+    "price": 3500000,
+    "currency": "NGN",
+    "category": "Residential",
+    "status": "For Rent",
+    "description": "Furnished studio apartment ideal for young professionals.",
+    "features": {
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "furnished": true
+    }
+  },
+  {
+    "id": 14,
+    "title": "Industrial Land",
+    "image": "/Estate-images/pixasquare-4ojhpgKpS68-unsplash.jpg",
+    "location": "Sango-Ota, Ogun, Nigeria",
+    "price": 60000000,
+    "currency": "NGN",
+    "category": "Land",
+    "status": "For Sale",
+    "description": "Strategic industrial land close to major road networks.",
+    "features": {
+      "landSize": "3000 sqm",
+      "titleDocument": "Registered Survey"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Hotel Building",
+    "image": "/Estate-images/stefan-k-_XJ8T9E9Evs-unsplash.jpg",
+    "location": "Enugu, Nigeria",
+    "price": 500000000,
+    "currency": "NGN",
+    "category": "Commercial",
+    "status": "For Sale",
+    "description": "Fully functional 40-room hotel with restaurant, lounge, and swimming pool.",
+    "features": {
+      "rooms": 40,
+      "parkingSpaces": 25,
+      "swimmingPool": true
+    }
+  }
+],
+
+
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Chinedu Okafor",
+      "image": "https://randomuser.me/api/portraits/men/32.jpg",
+      "location": "Lagos, Nigeria",
+      "feedback": "I bought my first duplex through this platform and the process was smooth. The agents were transparent and helpful.",
+      "rating": 5,
+      "date": "2024-08-12"
+    },
+    {
+      "id": 2,
+      "name": "Amina Bello",
+      "image": "https://randomuser.me/api/portraits/women/45.jpg",
+      "location": "Abuja, Nigeria",
+      "feedback": "Renting my apartment was stress-free. I especially loved how quickly I got responses to my inquiries.",
+      "rating": 4,
+      "date": "2024-09-03"
+    },
+    {
+      "id": 3,
+      "name": "David Johnson",
+      "image": "https://randomuser.me/api/portraits/men/14.jpg",
+      "location": "Port Harcourt, Nigeria",
+      "feedback": "Very professional service. I was able to lease my office space within a week. Highly recommended!",
+      "rating": 5,
+      "date": "2024-07-29"
+    },
+    {
+      "id": 4,
+      "name": "Ngozi Umeh",
+      "image": "https://randomuser.me/api/portraits/women/62.jpg",
+      "location": "Enugu, Nigeria",
+      "feedback": "I love how detailed the listings are. It made finding land for my project very easy.",
+      "rating": 4,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 5,
+      "name": "Samuel Adeyemi",
+      "image": "https://randomuser.me/api/portraits/men/71.jpg",
+      "location": "Ibadan, Nigeria",
+      "feedback": "The platform made it easy to compare prices and locations. Ended up buying a nice bungalow at a fair deal.",
+      "rating": 5,
+      "date": "2024-10-02"
+    },
+    {
+      "id": 6,
+      "name": "Fatima Yusuf",
+      "image": "https://randomuser.me/api/portraits/women/29.jpg",
+      "location": "Kano, Nigeria",
+      "feedback": "Customer support was fantastic. They patiently guided me until I found the right property.",
+      "rating": 5,
+      "date": "2024-11-20"
+    },
+    {
+      "id": 7,
+      "name": "Ifeanyi Nwosu",
+      "image": "https://randomuser.me/api/portraits/men/52.jpg",
+      "location": "Onitsha, Nigeria",
+      "feedback": "Great selection of commercial properties. I was able to secure a warehouse for my business.",
+      "rating": 4,
+      "date": "2024-09-18"
+    },
+    {
+      "id": 8,
+      "name": "Blessing Eze",
+      "image": "https://randomuser.me/api/portraits/women/80.jpg",
+      "location": "Owerri, Nigeria",
+      "feedback": "The agents were reliable and kept me updated every step of the way. I feel safe recommending this service.",
+      "rating": 5,
+      "date": "2024-08-25"
+    },
+    {
+      "id": 9,
+      "name": "Michael Thompson",
+      "image": "https://randomuser.me/api/portraits/men/39.jpg",
+      "location": "Lagos, Nigeria",
+      "feedback": "Smooth experience renting my flat. The website is user-friendly and straightforward.",
+      "rating": 4,
+      "date": "2024-12-01"
+    },
+    {
+      "id": 10,
+      "name": "Ruth Adebanjo",
+      "image": "https://randomuser.me/api/portraits/women/21.jpg",
+      "location": "Abeokuta, Nigeria",
+      "feedback": "I’m very happy with my purchase. The estate is secure, and everything was handled professionally.",
+      "rating": 5,
+      "date": "2024-11-10"
+    }
+  ]
+}
+
+
+
+
+
