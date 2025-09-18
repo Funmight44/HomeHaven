@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PropertyDetailCard = ({property}) => {
     return ( 
         <div className="property-detail-card">
@@ -15,7 +17,7 @@ const PropertyDetailCard = ({property}) => {
                     <span>Bathrooms: {property.features.bathrooms}</span>
                     {property.features.furnished ? <span>Furnished</span> : <span>Unfurnished</span>}
                 </div> */}
-               <a href="#contact"> <button>Contact Agent</button></a>
+               <Link to="/contact"><button>Contact Agent</button></Link>
             </div>
         </div>
      );
