@@ -1,10 +1,12 @@
 import { useState } from "react";
-import UseTitle from "../../components/useTitle";
-import Footer from "../../components/footer";
+import UseTitle from "../hook/usetitle";
+
+
 
 const Contact = () => {
-     UseTitle("Contact")
-     const [result, setResult] = useState("");
+  UseTitle("Contact")
+    const [result, setResult] = useState("");
+
     const onSubmit = async (event) => {
         event.preventDefault();
         setResult("Sending....");
@@ -29,11 +31,10 @@ const Contact = () => {
       };
 
    return (  
-       <>
-        <section>
+        <section className="modal-overlay">
             <div className="contact">
                 <div className="content">
-                    <h3>#Contact</h3>
+                    <h3>Contact</h3>
                     <form onSubmit={onSubmit}>
                         <input type="text" name="name" placeholder="Name" required/>
                         <input type="email" name="email" placeholder="Email Address" required/>
@@ -45,8 +46,8 @@ const Contact = () => {
                 </div>
             </div>
         </section>
-        <Footer/>
-        </>
+        
+  
     );
 } 
  

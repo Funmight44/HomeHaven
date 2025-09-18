@@ -196,6 +196,7 @@ nav{
   margin: 20px auto;
   color: #666;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 
@@ -415,6 +416,7 @@ nav{
   .about{
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .about img, .about-text{
@@ -424,6 +426,7 @@ nav{
 
   .about img{
     height: 300px;
+    width: 100%;
   }
 }
 
@@ -541,9 +544,10 @@ nav{
 
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
   width: 90%;
+  margin: auto;
 }
 
 .testimonial-card {
@@ -614,57 +618,129 @@ nav{
   color: #9ca3af;
 }
 
+@media (max-width: 768px) {
+  .testimonials-grid {
+    width: 100%;
+  }
+  
+}
+
 
 /* contact style */
-.contact{
-  padding: 30px;
+/* Fullscreen overlay background */
+
+.modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   width: 100%;
+  padding: 2rem;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-.contact .content{
-  padding: 10px 20px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
-  border-radius: 10px;
-  width: 80%;
-  margin:30px auto;
+/* Contact card container */
+.contact .content {
+  background: blue;
+   backdrop-filter: blur(12px); 
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  animation: slideUp 1.2s ease;
 }
 
-.contact .content h3{
-  font-size: 30px;
-  font-weight: 200;
-  text-transform: uppercase;
-  color: #010f1c;
+/* Heading */
+.contact .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
   text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
-.contact .content form{
-  width: 40%;
+/* Form */
+.contact form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin: 20px auto;
+  gap: 1rem;
 }
 
-.content form input, textarea{
-  width: 400px;
-  padding: 10px 30px;
+/* Inputs & Textarea */
+.contact input,
+.contact textarea {
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1rem;
   outline: none;
-  border: 0;
-  border-radius: 5px;
-  border-bottom: 2px solid black;
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+  transition: all 0.3s ease-in-out;
 }
 
-form button{
-  width: 400px;
-  padding: 10px;
-  background-color: #c5585f;
-  border-radius: 10px;
-  outline: 0;
-  border: 0;
-  cursor: pointer;
-  font-size: 17px;
-  color: #fff;
+.contact input:focus,
+.contact textarea:focus {
+  background: #fff;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
 }
+
+/* Button */
+.contact button {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.contact button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Status message */
+.contact span {
+  display: block;
+  margin-top: 0.8rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
 
 @media (max-width: 768px){
   .contact .content{
@@ -686,5 +762,63 @@ form button{
 
   form button{
     width: 95%;
+  }
+}
+
+
+/* footer style */
+
+footer{
+  width: 100%;
+  padding: 20px 0;
+  background-color: gray;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer-cont{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-cont h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-cont p{
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+.footer-cont .socials  {
+  display: inline-flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.footer-cont .socials i{
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width:768px){
+  .footer-cont{
+    gap: 20px;
+    width: 100%;
+    
+  }
+
+  .footer-cont .socials{
+      font-size: 16px;
+      gap: 15px;
+      margin-right: 20px;
+  }
+
+  .footer-cont h2, .footer-cont p{
+    font-size: 16px;
   }
 }

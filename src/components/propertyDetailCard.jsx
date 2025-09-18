@@ -15,7 +15,7 @@ const PropertyDetailCard = ({property}) => {
                     <span>Bathrooms: {property.features.bathrooms}</span>
                     {property.features.furnished ? <span>Furnished</span> : <span>Unfurnished</span>}
                 </div> */}
-                <button>Contact Agent</button>
+               <a href="#contact"> <button>Contact Agent</button></a>
             </div>
         </div>
      );

@@ -2,8 +2,10 @@ import useFetch from "../hook/useFetch"
 import Card from "../components/card";
 import { useState } from "react";
 import BASE_URL from "../config";
+import UseTitle from "../hook/usetitle";
 
 const ProductPage = () => {
+    UseTitle("Properties")
     const {data:products, loading} = useFetch(`${BASE_URL}/products`);
     const [filter, setFilter] = useState([])
 

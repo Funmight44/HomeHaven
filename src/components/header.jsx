@@ -1,18 +1,21 @@
 import { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
+import Contact from "../pages/contact";
 const Header = () => {
     const [showNav, setShowNav] = useState(false)
     const { isAuthenticated, user, loginWithRedirect, logout} = useAuth0();
+   
 
 
     return ( 
+        <>
         <header>
             <nav>
-                <div className="logo-cont">
+                <Link to="/"><div className="logo-cont">
                     <img src="/Estate-images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg"/>
                     <h2>HomeHaven</h2>
-                </div>
+                </div></Link>
                 <div className={`nav-links ${showNav ? 'sideBar' : ''}`} onClick={() => setShowNav(false)}>
                     <a href="/"><p>Home</p></a>
                     <a href="#about"><p>About</p></a>
@@ -33,11 +36,13 @@ const Header = () => {
                 <p>Discover, Explore, and Find Your Perfect Property with Us</p>
                 <div className="header-btns">
                     <Link to="/products"><button>Projects</button></Link>
-                   <a href="#Contact"><button className="contact-btn">Contact Us</button></a> 
+                    <Link to="/contact"><button className="contact-btn">Contact Us</button> </Link> 
                 </div>
             </div>
             
         </header>
+        
+     </>
      );
 }
  

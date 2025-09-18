@@ -2,13 +2,16 @@ import { useEffect, useState } from "react";
 import PropertyDetailCard from "../components/propertyDetailCard";
 import { useParams } from "react-router-dom";
 import BASE_URL from "../config";
+import UseTitle from "../hook/usetitle";
 
 const PropertyDetails = () => {
+  UseTitle("Property Details")
     const [property, setProperty] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     const {id} = useParams()
+    UseTitle("Property Details")
 
 
    useEffect(() => {
