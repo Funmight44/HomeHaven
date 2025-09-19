@@ -17,10 +17,12 @@ const Header = () => {
                     <h2>HomeHaven</h2>
                 </div></Link>
                 <div className={`nav-links ${showNav ? 'sideBar' : ''}`} onClick={() => setShowNav(false)}>
-                    <a href="/"><p>Home</p></a>
-                    <a href="#about"><p>About</p></a>
+                    <Link to="/"><p>Home</p></Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/contact">Contact</Link>
+                    {/* <a href="#about"><p>About</p></a>
                      <a href="#projects"><p>Projects</p></a>
-                    <a href="#testimonial"><p>Testimonial</p></a>
+                    <a href="#testimonial"><p>Testimonial</p></a> */}
                     {isAuthenticated && <h3>User: {user.name}</h3>}
                    
                 </div>
@@ -35,7 +37,7 @@ const Header = () => {
                 <h1>Your Gateway to Dream Homes</h1>
                 <p>Discover, Explore, and Find Your Perfect Property with Us</p>
                 <div className="header-btns">
-                    <Link to="/products"><button>Projects</button></Link>
+                    <Link to="/projects"><button>Projects</button></Link>
                     <Link to="/contact"><button className="contact-btn">Contact Us</button> </Link> 
                 </div>
             </div>

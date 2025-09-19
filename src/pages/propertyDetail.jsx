@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import PropertyDetailCard from "../components/propertyDetailCard";
+import { Suspense, useEffect, useState, lazy } from "react";
+// import PropertyDetailCard from "../components/propertyDetailCard";
 import { useParams } from "react-router-dom";
 import BASE_URL from "../config";
 import UseTitle from "../hook/usetitle";
@@ -13,9 +13,10 @@ const PropertyDetails = () => {
     const {id} = useParams()
     UseTitle("Property Details")
 
+    //react optimation using react lazy load
+    const PropertyDetailCard = lazy(() => import('../components/propertyDetailCard'))
 
    useEffect(() => {
-  
             async function getPropertyDetails() {
               try{
                   const response = await fetch(`${BASE_URL}/products/${id}`);
@@ -37,7 +38,12 @@ const PropertyDetails = () => {
         <section >
               {loading && <p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}
               {error && <p>{error}</p>}
-              {<PropertyDetailCard property={property}/>} 
+              {!loading && !error && (
+                <Suspense fallback={<p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}>
+                   <PropertyDetailCard property={property} />
+                </Suspense>
+              )}
+              
         </section>
      );
 }
