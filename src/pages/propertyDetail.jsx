@@ -37,7 +37,6 @@ const PropertyDetails = () => {
 
     return ( 
         <section >
-              {loading && <p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}
               {error && <p>{error}</p>}
               {!loading && !error && (
                 <Suspense fallback={<p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}>

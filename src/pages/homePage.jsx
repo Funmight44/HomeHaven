@@ -11,17 +11,11 @@ const Testimonial = lazy(() => import("../components/testimonial"))
 const Homepage = () => {
     UseTitle("Home")
     return ( 
-        <>
            <Suspense fallback={<p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}>
               <About/>
+               <Products/>
+               <Testimonial/>
            </Suspense> 
-           <Suspense fallback={<p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}>
-                <Products/>
-           </Suspense>
-          <Suspense fallback={<p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}>
-                <Testimonial/>
-          </Suspense>
-        </>
      );
 }
  
