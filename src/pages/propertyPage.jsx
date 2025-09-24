@@ -1,14 +1,23 @@
 import useFetch from "../hook/useFetch"
 import Card from "../components/card";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BASE_URL from "../config";
 import UseTitle from "../hook/usetitle";
 
 const ProductPage = () => {
     UseTitle("Properties")
     const {data:products, loading} = useFetch(`${BASE_URL}/products`);
-    const [filter, setFilter] = useState([])
+    const [filter, setFilter] = useState([]);
 
+    
+  //load all products by default after fetch
+    useEffect(() => {
+        if(products && products.length > 0){
+            setFilter(products)
+        }
+    }, [products])
+
+    //filter products based on category
     function getCategory(category){
         const selecteCategories = products.filter((item) => item.category === category)
         setFilter(selecteCategories)

@@ -36,8 +36,13 @@ const PropertyDetails = () => {
 
 
     return ( 
-        <section >
-              {error && <p>{error}</p>}
+        <section>  
+              <div>
+                <h1 className="property-detail-heading">Property Details</h1>
+                <p className="property-detail-subheading">Explore the features and details of your selected property below.</p>
+              </div>
+              {error && <p style={{textAlign: "center"}}>{error}</p>}
+              {loading && <p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}
               {!loading && !error && (
                 <Suspense fallback={<p className="loader"><i class="bi bi-arrow-clockwise"></i></p>}>
                    <PropertyDetailCard property={property} />

@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState} from "react";
 import UseTitle from "../hook/usetitle";
 import { useAuth0 } from "@auth0/auth0-react";
+import { useLocation } from "react-router-dom";
+
 
 
 
@@ -9,6 +11,7 @@ const Contact = () => {
     const [result, setResult] = useState("");
       const [emailError, setEmailError] = useState("");
       const {isAuthenticated, loginWithRedirect} = useAuth0();
+      const location = useLocation();
 
       function validateEmail(email) {
         const regress = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -53,7 +56,7 @@ const Contact = () => {
                 <div className="content">
                   <h3>Access Denied</h3>
                   <p style={{maginBottom: "20px"}}>You must be signed in to access the Contact page.</p>
-                  <button onClick={() => loginWithRedirect()}>Sign In</button>
+                  <button onClick={() => loginWithRedirect({ appState: { returnTo: location.pathname }})}>Sign In</button>
                 </div>
               </div>
             </section>
