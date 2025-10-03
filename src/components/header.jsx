@@ -26,18 +26,7 @@ const Header = () => {
                 : <button className="signUp-btn" onClick={() => loginWithRedirect()}>Sign In</button>}
 
                 <button className="showNav-btn" onClick={() => setShowNav(!showNav)}><i className="bi bi-list"></i></button>
-            </nav>
-            
-
-            <div className="header-text">
-                <h1>Your Gateway to Dream Homes</h1>
-                <p>Discover, Explore, and Find Your Perfect Property with Us</p>
-                <div className="header-btns">
-                    <Link to="/projects"><button>Projects</button></Link>
-                    <Link to="/contact"><button className="contact-btn">Contact Us</button> </Link> 
-                </div>
-            </div>
-            
+            </nav> 
         </header>
         
      </>

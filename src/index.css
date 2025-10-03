@@ -18,7 +18,25 @@ section{
   margin: 80px auto;
 }
 
-header{
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(38, 38, 104);
+}
+
+
+
+
+
+.hero{
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
@@ -27,17 +45,9 @@ header{
   background-position: center;
   z-index: 1000;
   position: relative;
+  margin-top: 0;
 }
 
-nav{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .logo-cont{
   display: inline-flex;
@@ -46,7 +56,7 @@ nav{
 }
 
 .logo-cont h2{
-  color: white;
+  color: #fff;
   font-size: 24px;
   font-weight: 700;
 }
@@ -64,7 +74,7 @@ nav{
 
 .nav-links a{
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 20px;
   font-weight: 700;
 }
@@ -253,7 +263,9 @@ nav{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
+  animation: slideUp 1.2s ease;
   transition: transform 0.3s ease;
+
 }
 
 
@@ -366,6 +378,7 @@ nav{
   gap: 50px;
   justify-content: center;
   margin: 40px auto;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .about img{
@@ -432,6 +445,10 @@ nav{
 
 
 /* property details style */
+.property-details{
+  animation: fadeIn 1.5s ease-in-out;
+}
+
 .property-detail-heading{
   text-align: center;
   font-size: 30px;
@@ -457,6 +474,7 @@ nav{
   overflow: hidden;
   display: flex;
   gap: 20px;
+  animation: fadeIn 1.5s ease-in-out
 }
 
 .property-detail-card img{

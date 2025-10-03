@@ -52,6 +52,5 @@ const ProductPage = () => {
            
         </section>
      );
-}
- 
+} 
 export default ProductPage;
