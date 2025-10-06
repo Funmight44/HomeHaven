@@ -1,4 +1,14 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const About = () => {
+            useGSAP(() => {
+            gsap.fromTo('.property-detail-info', {opacity:0, duration:1, xPercent: 100}, 
+            {opacity:1, duration:1.8, xPercent:0, ease: 'power1.inOut', stagger: 0.02})
+
+             gsap.fromTo('.property-detail-card img', {opacity:0, duration:1, xPercent: -100}, 
+            {opacity:1, duration:1.8, xPercent:0, ease: 'power1.inOut', stagger: 0.02})
+        })
     return ( 
         <section id="about">
             <h1 className="about-heading">About <span>Us</span> </h1>

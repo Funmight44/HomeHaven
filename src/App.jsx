@@ -9,7 +9,7 @@ import Hero from './components/hero'
 function App() {
   return(
     <main className="App">
-          <Header/>
+        <Header/>
         <AllRoutes/>
         <Footer/>
     </main>

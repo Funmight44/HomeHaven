@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
-import gsap from "gsap";
+
 
 const PropertyDetailCard = ({property}) => {
-    gsap.fromTo('.property-detail-info', {opacity:0, duration:1, xPercent: 100}, 
-        {opacity:1, duration:1.8, xPercent:0, ease: 'power1.inOut', stagger: 0.02})
-
-    gsap.fromTo('.property-detail-card img', {opacity:0, duration:1, xPercent: -100}, 
-        {opacity:1, duration:1.8, xPercent:0, ease: 'power1.inOut', stagger: 0.02})
-
-
     return ( 
         <div className="property-detail-card">
             <img src={property.image} alt="property image" />

@@ -190,6 +190,11 @@ nav{
 }
 
 /* product style */
+#projects{
+  animation: slideUp 1.5s ease;
+}
+
+
 
 .product-heading{
   text-align: center;
@@ -474,7 +479,7 @@ nav{
   overflow: hidden;
   display: flex;
   gap: 20px;
-  animation: fadeIn 1.5s ease-in-out
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .property-detail-card img{
