@@ -192,6 +192,7 @@ nav{
 /* product style */
 #projects{
   animation: slideUp 1.5s ease;
+  min-height: 100vh;
 }
 
 
@@ -452,6 +453,7 @@ nav{
 /* property details style */
 .property-details{
   animation: fadeIn 1.5s ease-in-out;
+  min-height: 100vh;
 }
 
 .property-detail-heading{
